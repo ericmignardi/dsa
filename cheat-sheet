@@ -1,0 +1,24 @@
+Big-O Algorithm Complexity Cheat Sheet:
+https://www.bigocheatsheet.com/
+
+Data Structure	Access	Search	Insertion	Deletion	Notes
+Array	O(1)	O(n)	O(n)	O(n)	Fixed size
+ArrayList	O(1)	O(n)	O(n)*	O(n)	Amortized O(1) insert at end
+LinkedList	O(n)	O(n)	O(1)	O(1)	Efficient add/remove at ends
+HashMap	-	O(1)	O(1)	O(1)	Worst-case O(n) if collisions
+TreeMap (Red-Black)	-	O(log n)	O(log n)	O(log n)	Keys sorted
+HashSet	-	O(1)	O(1)	O(1)	Backed by HashMap
+TreeSet	-	O(log n)	O(log n)	O(log n)	Backed by TreeMap
+Stack (via LinkedList/Deque)	O(n)	O(n)	O(1)	O(1)	Push/pop is O(1)
+Queue (LinkedList/PriorityQueue)	O(n)	O(n)	O(1)/O(log n)	O(1)/O(log n)	PriorityQueue uses heap
+PriorityQueue	-	O(n)	O(log n)	O(log n)	Min-heap
+
+Algorithm	Time Complexity	Notes
+Binary Search	O(log n)	Sorted arrays/lists only
+Bubble Sort	O(n²)	Inefficient
+Selection Sort	O(n²)
+Insertion Sort	O(n²)	Good for small or nearly sorted data
+Merge Sort	O(n log n)	Stable sort
+Quick Sort	O(n log n) avg / O(n²) worst	Not stable
+Heap Sort	O(n log n)	Not stable
+Linear Search	O(n)
